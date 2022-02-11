@@ -1,0 +1,10 @@
+.cartlist{
+width:300px;
+height:100vh;
+border:1px solid #152069;
+position:fixed;
+top:0;
+right:0;
+background-color:#69c6af;
+z-index: 2;
+}

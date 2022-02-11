@@ -1,0 +1,44 @@
+.footerbody{
+    background:linear-gradient(to right, #152069, #244A80,#4EADAf);
+}
+
+.footerbody .title h1{
+    color:#fff;
+}
+
+.footerbody .description{
+text-align: center;
+color:#fff;
+font-size:20px;
+
+}
+
+.footerbody .description span{
+    color:#62e9c9;
+}
+
+.footerbody .menulink h3{
+color:#fff;
+text-align: center;
+}
+
+.footerbody .menulink p{
+    color:#fff;
+    text-align: center;
+    font-size:20px;
+    }
+    .footerbody .social i{
+        color:#62e9c9;
+        font-size:25px;
+        transition:0.5s;
+    }
+
+    .footerbody .social i:hover{
+        color:#152069;
+    }
+    .footerrights .rights{
+        background:linear-gradient(to left, #152069, #244A80,#4EADAf);
+        color:#ffffff;
+        font-weight:400;
+        font-size:18px;
+    }

@@ -1,0 +1,74 @@
+.maincard{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height:400px;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition:0.5s;
+}
+
+.maincard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.flashbox .imgbox{
+    height:250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+}
+.flashbox .imgbox img{
+    height:100%;
+}
+.flashtitle{
+    color:#152069;
+}   
+.flashtitle i{
+    margin-right:10px;
+}
+.flashbox .detail p{
+font-size:18px;
+color:#152069;
+font-weight:600;
+}
+.flashbox .flashoff{
+    top:20px;
+    left:20px;
+    height:30px;
+    width:90px;
+    border-radius: 15px;
+    background-color:#152069;
+    color:#88DEB0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+}
+
+.flashline .changer{
+    position:absolute;
+    font-size:40px;
+   color:#152069;
+
+}
+
+.flashline .next{
+top:50%;
+right:-50px;
+transform:translateY(-50%);
+}
+
+.flashline .pre{
+left:-50px;
+top:50%;
+transform:translateY(-50%);
+}
+
+@media only screen and (max-width:600px){
+    .flashline .changer{
+        display:none;
+    }
+}

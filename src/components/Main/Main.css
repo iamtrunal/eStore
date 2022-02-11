@@ -1,0 +1,162 @@
+.landingscr{
+    min-height:550px;
+    width:100%;
+    background:linear-gradient(to right, #152069, #244A80,#4EADAf);
+}
+.mobiletitle{
+    display:none;
+}
+.landingscr .sofaset{
+   display:flex;  
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.landingscr .mainpicbox{
+    background-image: url("../../../public//images/sofabg.png")!important;
+    height:400px;
+   margin-top:50px;
+    background-size:contain;
+    background-repeat: no-repeat;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   transition:0.5s;
+
+}
+
+.landingscr .mainpicbox img{
+    height:350px;
+    transition:0.5s;
+    
+}
+
+.landingscr .sofaset img{
+    width:100px;
+    border-bottom:2px solid #bebdb8;    
+    transition:0.5s;
+    cursor: pointer;
+}
+.watches img{
+    border-bottom-style: none!important;
+}
+.landingscr h1{
+    font-size:50px;
+    color:#d9dddc;
+}
+
+.landingscr h4{
+    color:#bebdb8;
+}
+
+.watchimg{
+    border-bottom:2px solid #bebdb8;
+    transition:0.5s;
+}
+/* ...slider Dots..... */
+
+.landingscr .dotset{
+position:absolute;
+ display: flex;
+bottom:10px;
+left:50%;
+transform: translateX(-50%);
+
+}
+
+.landingscr .dotset .dot{
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    margin:5px
+
+}
+
+.menutog{
+    display:none;
+    font-size:30px;
+}
+
+/* ....TogMenu.............. */
+.togmenu{
+    height:100vh;
+    width:100%;
+    background-color:greenyellow;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1
+
+}
+
+@media only screen and (max-width:1300px){
+    .menutog{
+        display:block;
+        right:10px;
+        top:20px;
+        color:#140951!important;
+        z-index: 3;
+    }
+
+
+  .landingscr .slider{
+      flex-direction: column;
+  }
+
+  .landingscr .slider .mainpicbox{
+      width:100%;
+      height:250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image:none!important;
+      margin:auto;
+      padding:30px 0 0 0!important;
+  }
+
+  .landingscr .slider .mainpicbox img{
+      height:250px;
+  }
+
+  .landingscr .slider .text{
+      width:100%;
+  }
+
+  .landingscr .slider .text h1{
+    font-size:25px!important;
+    margin:0;
+  }
+  .landingscr .slider .text h4{
+    font-size:20px!important;
+    margin:0;
+  }
+
+  .imgvariant{
+       padding-bottom:70px;
+  }
+
+
+  .imgvariant img{
+      width:50px!important;
+  }
+
+}
+
+@media only screen and (max-width:1000px){
+    .mobiletitle{
+        display:block!important;
+        color:#69C6AF!important;
+        font-size:40px!important;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+
+    .landingscr{
+        min-height:100vh!important;
+    }
+    .landingscr .dotset{
+        bottom:20px;
+    }
+}
+

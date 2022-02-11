@@ -1,0 +1,122 @@
+/* .header{
+    background-color:#3f51b51a;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+} */
+
+.logo{
+    color:#3f51b5;
+}
+.search input{
+    width:97%;
+    border-radius: 15px;
+    height:35px;
+    border-style: none;
+    outline: none;
+    font-size:18px;
+    color:#3f51b5;
+}
+
+.search input::placeholder{
+    color:#7e8ee4;
+}
+
+.search i{
+    color:#3f51b5;
+    font-size:18px;
+    
+}
+
+.search .searchbtn{
+    width:150px;
+    height:100%;
+    border-radius: 0 15px 15px 0;;
+}
+
+.search{
+    overflow:hidden; 
+    border: 1px solid #3f51b5;
+    border-radius: 20px;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opt{
+    color:#3f51b5;
+    font-size:30px;
+    font-weight:lighter;
+
+}
+
+/* .SubHeader........................ */
+
+.subhead{
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.catrgoriesbtn{
+    width:200px;
+}
+.catrgoriesbtn i{
+    transition:0.5s;
+}
+
+.menu{
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.menu p{
+    letter-spacing: 1px;
+    color:#3f51b5;
+    font-weight:600;
+}
+/* ...........categoriecard.............. */
+
+.categoriecard{
+    border-radius: 0 0 5px 5px;
+    overflow:hidden;
+    padding:0;
+    width:200px;
+    position:absolute;
+    z-index: 1;
+    background-color:rgb(255, 255, 255);
+    top:125px; 
+    border:1px solid #3f51b5;   
+}
+.categoriecard ul li p{
+    font-size:18px;
+    margin:0;
+     padding:0;
+     color:#3f51b5;
+}
+
+.categoriecard ul li{
+
+    padding-left:10px;
+    list-style-type: none;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:20px;
+    border-bottom: 1px solid #3f51b541;
+}
+
+.categoriecard ul li i{
+    width:30px;
+font-size:20px;
+font-weight:lighter;
+color:#3f51b5;
+padding:0
+}
+
+@media only screen and (max-width:1000px){
+    .header{
+        display:none;
+    }
+    .subhead{
+        display: none;
+    }
+}
