@@ -1,9 +1,10 @@
+import { toast } from "react-toastify";
 import {
-  ADD_CART,
   ADD_CART_FAILED,
   FETCH_CART,
   REMOVE_CART,
   REMOVE_CART_FAILED,
+  UPDATE_CART_FAILED,
 } from "../const/actionConst";
 
 const initialState = {
@@ -16,12 +17,8 @@ export const addCartReducer = (state = initialState, action) => {
       return {
         cartItems: action.payload,
       };
-    case ADD_CART:
-      return {
-        cartItems: [...state.cartItems, action.payload],
-      };
     case ADD_CART_FAILED:
-      console.log("faild to add");
+      toast.error("Failed to add item in cart");
       return state;
     case REMOVE_CART:
       const newItems = state.cartItems.filter(
@@ -31,7 +28,10 @@ export const addCartReducer = (state = initialState, action) => {
         cartItems: newItems,
       };
     case REMOVE_CART_FAILED:
-      console.log("faild to remove");
+      toast.error("Failed to remove item in cart");
+      return state;
+    case UPDATE_CART_FAILED:
+      toast.error("Failed to update item in cart");
       return state;
     default:
       return state;

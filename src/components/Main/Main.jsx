@@ -12,22 +12,14 @@ import TogMenu from "./TogMenu";
 import FlashDeal from "./FlashDeal";
 import NewArrivals from "./NewArrivals";
 import CartList from "../CartList";
-import { db, getCartItems } from "../../Firebase";
 import { fetchCart } from "../../redux/actions/actionType";
 
 const Main = () => {
   const [cartlist, setCartlist] = useState(false);
   const dispatch = useDispatch();
 
-  const fetchCartData = async () => {
-    const items = await getCartItems(db);
-    if (items && items.length) {
-      dispatch(fetchCart(items));
-    }
-  };
-
   useEffect(() => {
-    fetchCartData();
+    dispatch(fetchCart());
   }, []);
 
   const open = () => {

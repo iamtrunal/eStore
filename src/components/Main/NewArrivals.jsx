@@ -9,115 +9,115 @@ const NewArrivals = (props) => {
   const info = [
     {
       id: 0,
-      img: "./images/w22.png",
+      image: "w22.png",
       name: "Watch",
       unitPrice: 500,
-      desc: "Confortable for seatting & Looking good in your interior",
+      description: "Confortable for seatting & Looking good in your interior",
     },
     {
       id: 1,
-      img: "./images/55.png",
+      image: "55.png",
       name: "Men's Shoe",
       unitPrice: 100,
-      desc: "Looking well in your feet & comfortable for Running.",
+      description: "Looking well in your feet & comfortable for Running.",
     },
     {
       id: 2,
-      img: "./images/44.png",
+      image: "44.png",
       name: "Men's Shoe",
       unitPrice: 70,
-      desc: "Looking well in your feet & comfortable for Running.",
+      description: "Looking well in your feet & comfortable for Running.",
     },
     {
       id: 3,
-      img: "./images/w33.png",
+      image: "w33.png",
       name: "Watch",
       unitPrice: 50,
-      desc: "Beautify your hand & manage time",
+      description: "Beautify your hand & manage time",
     },
     {
       id: 4,
-      img: "./images/m1.png",
+      image: "m1.png",
       name: "Mobile",
       unitPrice: 50,
-      desc: "Beautify your hand & manage time",
+      description: "Beautify your hand & manage time",
     },
     {
       id: 5,
-      img: "./images/w11.png",
+      image: "w11.png",
       name: "Watch",
       unitPrice: 50,
-      desc: "Beautify your hand & manage time",
+      description: "Beautify your hand & manage time",
     },
     {
       id: 6,
-      img: "./images/m2.png",
+      image: "m2.png",
       name: "Mobile",
       unitPrice: 50,
-      desc: "Beautify your hand & manage time",
+      description: "Beautify your hand & manage time",
     },
     {
       id: 7,
-      img: "./images/sofa6.png",
+      image: "sofa6.png",
       name: "Sofa Furniture",
       unitPrice: 50,
-      desc: "Beautify your hand & manage time",
+      description: "Beautify your hand & manage time",
     },
     {
       id: 8,
-      img: "./images/lap1.png",
+      image: "lap1.png",
       name: "Lap Top",
       unitPrice: 5000,
-      desc: "Be Digitle",
+      description: "Be Digitle",
     },
     {
       id: 9,
-      img: "./images/lap2.png",
+      image: "lap2.png",
       name: "Lap Top",
       unitPrice: 5000,
-      desc: "Be Digitle",
+      description: "Be Digitle",
     },
     {
       id: 10,
-      img: "./images/lap3.png",
+      image: "lap3.png",
       name: "Lap Top",
       unitPrice: 5000,
-      desc: "Be Digitle",
+      description: "Be Digitle",
     },
     {
       id: 11,
-      img: "./images/lap4.png",
+      image: "lap4.png",
       name: "Lap Top",
       unitPrice: 5000,
-      desc: "Be Digitle",
+      description: "Be Digitle",
     },
     {
       id: 12,
-      img: "./images/lap5.png",
+      image: "lap5.png",
       name: "Lap Top",
       unitPrice: 5000,
-      desc: "Be Digitle",
+      description: "Be Digitle",
     },
     {
       id: 13,
-      img: "./images/bag1.png",
+      image: "bag1.png",
       name: "Lap Top",
       unitPrice: 500,
-      desc: "College Bag",
+      description: "College Bag",
     },
     {
       id: 14,
-      img: "./images/bag2.png",
+      image: "bag2.png",
       name: "Lap Top",
       unitPrice: 200,
-      desc: "College Bag",
+      description: "College Bag",
     },
     {
       id: 15,
-      img: "./images/bag3.png",
+      image: "bag3.png",
       name: "Lap Top",
       unitPrice: 100,
-      desc: "College Bag",
+      description: "College Bag",
     },
   ];
 
@@ -148,14 +148,14 @@ const NewArrivals = (props) => {
                               <div className="row newcard d-flex position-relative">
                                 <div className="col-12 my-2 m-auto flashcard p-4 imgbox overflow-hidden">
                                   <img
-                                    src={ele.img}
+                                    src={`./images/${ele.image}`}
                                     alt="product"
                                     style={{ transition: "0.5s" }}
                                   />
                                 </div>
                                 <div className="col-12 detail">
                                   <p className="m-0 mx-2">{ele.name}</p>
-                                  <p className="m-0 mx-2">${ele.price}</p>
+                                  <p className="m-0 mx-2">${ele.unitPrice}</p>
                                 </div>
                                 <button
                                   className="btn btn-primary position-absolute"
